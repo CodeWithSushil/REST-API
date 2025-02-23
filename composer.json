@@ -1,0 +1,20 @@
+{
+    "name": "codewithsushil/rest-api",
+    "description": "Rest api",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Codewithsushil\\RestApi\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Sushil Kumar",
+            "email": "sushilkumbhar77@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+      "php": "^8.3"
+    }
+}
