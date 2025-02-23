@@ -12,4 +12,4 @@ REST API: Login, Register, Dashboard, CRUD, Search, Pagination
 1. Responsive Layouts (Flexbox, Grid)
 2. Login/Register page with input validation
 3. Realtime update without page reload.
-4. 
+4. API integration.
