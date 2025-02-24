@@ -1,12 +1,6 @@
-(function(){
-  alert('Welcome to REST API');
-})();
+const ajax = new XMLHttpRequest();
+onreadystatechange = function(){
 
-
-
-
-
-
-
-
-
+}
+console.log(ajax);
+alert(ajax);

@@ -10,3 +10,18 @@ body {
   height: 100%;
   font-family: 'Roboto', sans-serif;
 }
+
+.hero-section{
+  max-height: 100vh;
+  margin: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap-reverse;
+}
+
+.hero-section .hero-img img{
+  width: 100%;
+  border-radius: 4px;
+  object-fit: cover;
+}
