@@ -14,7 +14,7 @@ class Database {
     try {
       $dns = "mysql:host={$this->host};port={$this->port};dbname={$this->dbname};";
       $this->conn = new PDO($dns, $this->username, $this->password);
-      //$this->conn->setAttribute();
+      //$this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     } catch (\Throwable $th) {
       print($th->getMessage());
       exit();
