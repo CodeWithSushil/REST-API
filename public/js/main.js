@@ -1,6 +1,7 @@
-const ajax = new XMLHttpRequest();
-onreadystatechange = function(){
-
+let postData = {
+  name:b'Sushil',
+  email: 'sushil@gmail.com',
 }
-console.log(ajax);
-alert(ajax);
+
+
+ajax('POST', '../../app/database.php', postData);
