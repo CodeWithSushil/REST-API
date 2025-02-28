@@ -1,5 +1,6 @@
 <?php
-if(isset($_SESSION['user'])){
+require_once('../php/database.php');
+if(isset($_SESSION['userId'])){
   header('Location: ./login.php');
 }
 include_once('./header.php');
@@ -25,15 +26,22 @@ include_once('./navbar.php');
                     </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>Title</td>
-                            <td>Content</td>
-                            <td>
-                                <a>Edit</a>
-                                <a>Delete</a>
-                            </td>
-                        </tr>
+<?php
+$stmt = $pdo->prepare("SELECT * FROM crud ORDER BY title DESC");
+$stmt->execute();
+$posts = $stmt->fetchAll(PDO::FETCH_ASSOC);
+$id = 1;
+foreach ($posts as $post) { ?>
+<tr>
+<td><?=$id?></td>
+<td><?=$post['title']?></td>
+<td><?=$post['content']?></td>
+<td>
+<a class="button is-primary">Edit</a>
+<a class="button is-danger">Delete</a>
+</td>
+</tr>
+<?php $id++; } ?>
                     </tbody>
                 </table>
             </div>

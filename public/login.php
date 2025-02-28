@@ -1,4 +1,9 @@
-<?php include_once('./header.php'); ?>
+<?php
+if(isset($_SESSION['userId'])){
+  header('Location: ./index.php');
+  exit();
+}
+include_once('./header.php'); ?>
 <div class="section">
             <div
                 class="columns is-mobile is-flex is-justify-content-center is-align-items-center"
