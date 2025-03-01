@@ -7,5 +7,7 @@
         <title>REST API</title>
         <link rel="stylesheet" href="./css/bulma.min.css" />
         <link rel="stylesheet" href="./css/style.css" />
+<script src="./js/eruda.js"></script>
+<script>eruda.init();</script>
     </head>
     <body>

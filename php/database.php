@@ -1,6 +1,6 @@
 <?php
 session_start();
 
-$pdo = new PDO("sqlite:database.db");
+$pdo = new PDO("mysql:host=127.0.0.1;port=3306;dbname=restapi;charset=utf8mb4;","root",'');
 $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-//$pdo->exec("INSERT INTO `crud`(`id`, `title`, `content`) VALUES ('1', 'Test Title', 'test content')");
+
