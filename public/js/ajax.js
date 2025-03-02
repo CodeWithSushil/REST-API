@@ -1,11 +1,11 @@
-function ajax(method='GET', url, data=null){
+function ajax(method, url, data=null){
   const ajax = new XMLHttpRequest();
 
   ajax.onreadystatechange = function(){
     if(this.readyState == 4 && this.status == 200){
       document.getElementById('msg').innerHTML = this.responseText;
     }
-  }
+  };
 
   ajax.open(method, url, true);
 
@@ -29,7 +29,7 @@ function getData(url){
     if(this.readyState == 4 && this.status ==200){
       return this.responseText;
     }
-  }
+  };
 }
 
 function postData(url, data){
@@ -46,6 +46,6 @@ function postData(url, data){
       if(this.readyState == 4 && this.status ==200){
         return this.responseText;
       }
-    }
+    };
   }
 }
