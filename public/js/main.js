@@ -27,8 +27,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     let data = JSON.stringify(postDatas);
-    console.log(postDatas);
-    let result = postData('../api/api.php', postDatas);
-    console.log(result);
+    console.log(data);
+   // let result = postData('../api/api.php', postDatas);
+    //console.log(result);
   });
 });

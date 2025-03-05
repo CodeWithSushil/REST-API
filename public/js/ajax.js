@@ -58,5 +58,19 @@ function postData(url, data){
 
 // New code with jQuery: v3.7.1
 $(document).ready(function(){
-  alert('jQuery running...');
+  $('#loginBtn').click(function(){
+    const uemail = $('#email').val();
+    const upassword = $('#password').val();
+    
+    let data = {
+      email: uemail,
+      password: upassword
+    }
+
+    $.post('../api/api.php', data, function(data, status){
+      alert('Data: '+ data +'\nStatus: '+ status)
+     // console.log(result);
+    });
+  });
+ // alert('jQuery running...');
 });
