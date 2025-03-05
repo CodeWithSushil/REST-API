@@ -1,3 +1,5 @@
+// old code
+/*
 function ajax(method, url, data=null){
   const ajax = new XMLHttpRequest();
 
@@ -44,8 +46,17 @@ function postData(url, data){
 
     ajax.onreadystatechange = function(){
       if(this.readyState == 4 && this.status ==200){
-        return this.responseText;
+        let result = this.responseText;
+        console.log(result);
+       return result;
+        alert('k')
       }
     };
   }
 }
+*/
+
+// New code with jQuery: v3.7.1
+$(document).ready(function(){
+  alert('jQuery running...');
+});

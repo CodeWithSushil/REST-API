@@ -1,7 +1,8 @@
 <?php
 require_once('../php/database.php');
-if(isset($_SESSION['userId'])){
+if(!isset($_SESSION['username'])){
   header('Location: ./login.php');
+  exit;
 }
 include_once('./header.php');
 include_once('./navbar.php');

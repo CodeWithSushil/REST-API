@@ -16,6 +16,19 @@ document.addEventListener("DOMContentLoaded", () => {
   /* AJAX code */
   const postSubmit = document.addEventListener("submit", (event)=> {
     event.preventDefault();
+   // alert('hi');
+    const uemail = document.getElementById('email').value;
+    const upassword = document.getElementById('password').value;
+   // const uname = document.getElementById('name');
 
+    let postDatas = {
+      email: uemail,
+      password: upassword
+    }
+
+    let data = JSON.stringify(postDatas);
+    console.log(postDatas);
+    let result = postData('../api/api.php', postDatas);
+    console.log(result);
   });
 });
