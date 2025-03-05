@@ -54,11 +54,11 @@ include_once('./header.php'); ?>
                                     minlength="6"
                                     required
                                 />
-                            </div>
+                            </div><p class="mb-3" id="result"></p>
                             <div
                                 class="is-flex is-justify-content-space-between"
                             >
-                                <button class="button is-link" type="submit">
+                                <button class="button is-link" type="submit" id="registerBtn">
                                     Register
                                 </button>
                                 <a class="button is-dark" href="./login.php"

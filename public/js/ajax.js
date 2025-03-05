@@ -58,19 +58,47 @@ function postData(url, data){
 
 // New code with jQuery: v3.7.1
 $(document).ready(function(){
+
+  // AJAX Post request for Login
   $('#loginBtn').click(function(){
     const uemail = $('#email').val();
     const upassword = $('#password').val();
-    
-    let data = {
+
+    let myData = {
       email: uemail,
       password: upassword
     }
 
-    $.post('../api/api.php', data, function(data, status){
-      alert('Data: '+ data +'\nStatus: '+ status)
-     // console.log(result);
+    $.ajax({
+      url: '../api/api.php',
+      type: 'POST',
+      data: myData,
+      success: function (data){
+        $('#result').html(data);
+      }
     });
   });
- // alert('jQuery running...');
+
+  // AJAX POST Request for Register
+  $('#registerBtn').click(function(){
+    const uname = $('#name').val();
+    const uemail = $('#email').val();
+    const upassword = $('#password').val();
+
+    let myData = {
+      name: uname,
+      email: uemail,
+      password: upassword
+    }
+
+    $.ajax({
+      url: '../api/api.php',
+      type: 'POST',
+      data: myData,
+      success: function(data){
+        $('#result').html(data);
+      }
+    });
+  });
 });
+

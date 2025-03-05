@@ -19,7 +19,7 @@ include_once('./header.php'); ?>
           <div class="mb-3">
             <label for="password">Password</label>
             <input class="input" type="password" name="password" id="password" placeholder="Password" minlength="6" required/>
-          </div>
+          </div><p class="mb-3" id="result"></p>
           <div class="is-flex is-justify-content-space-between">
             <button class="button is-link" type="submit" id="loginBtn"> Login </button>
             <a class="button is-dark" href="./register.php"> Register </a>
