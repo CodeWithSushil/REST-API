@@ -1,11 +1,18 @@
 {
     "name": "codewithsushil/rest-api",
-    "description": "Rest api",
+    "description": "RESTFuls API in core PHP and JjQuery.",
     "type": "project",
+    "require": {
+        "php": "^8.3"
+    },
+    "license": "Apache-2.0",
     "autoload": {
         "psr-4": {
-            "Codewithsushil\\RestApi\\": "src/"
-        }
+            "App\\": "app/"
+        },
+        "files": [
+            "app/Services/Functions.php"
+        ]
     },
     "authors": [
         {
@@ -13,8 +20,6 @@
             "email": "sushilkumbhar77@gmail.com"
         }
     ],
-    "minimum-stability": "stable",
-    "require": {
-      "php": "^8.3"
-    }
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }

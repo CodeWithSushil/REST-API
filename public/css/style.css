@@ -1,8 +1,75 @@
 body{
-    width: 100vw;
-    height: 100vh;
-    background-color: #F1F1F1;
+  font-family: 'Inter', sans-serif;
 }
-table, .table{
-    width: 100%;
+
+.min-vh-100{
+    min-height: calc(100dvh - 100px)!important;
+}
+
+/* Login Card */
+.login-card {
+    border-radius: 14px;
+    background: #fff;
+    transition: box-shadow .3s ease;
+}
+
+.login-card:hover {
+    box-shadow: 0 12px 35px rgba(0,0,0,.12) !important;
+}
+
+/* Login Icon */
+.login-icon {
+    font-size: 48px;
+    color: #212529;
+}
+
+/* Input */
+.form-control,
+.input-group-text {
+    padding: 11px 13px;
+}
+
+.form-control:focus {
+    border-color: #212529;
+    box-shadow: 0 0 0 .2rem rgba(33,37,41,.1);
+}
+
+.input-group-text {
+    background: #f8f9fa;
+}
+
+/* Checkbox */
+.form-check-input:checked {
+    background-color: #212529;
+    border-color: #212529;
+}
+
+/* Buttons */
+.btn {
+    padding: 10px 14px;
+    font-weight: 500;
+}
+
+/* Links */
+a {
+    transition: color .2s ease;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+    .login-card {
+        border-radius: 10px;
+    }
+
+    .login-icon {
+        font-size: 40px;
+    }
+
+    .card-body {
+        padding: 22px !important;
+    }
+
+    .btn {
+        font-size: 14px;
+    }
 }
