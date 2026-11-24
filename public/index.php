@@ -12,5 +12,5 @@ require APP_ROOT . '/routes/web.php';
 
 $router->dispatch();
 
-session_start();
+//session_start();
 
