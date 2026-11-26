@@ -50,4 +50,16 @@ class AuthController
             echo 'Unable to register.';
         }
     }
+
+    public function logout()
+    {
+        session_start();
+
+        $_SESSION = [];
+
+        session_destroy();
+
+        header('Location: /login');
+        exit;
+    }
 }

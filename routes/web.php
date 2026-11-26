@@ -15,3 +15,5 @@ Router::post('/login', [AuthController::class, 'submitLogin']);
 Router::get('/register', [AuthController::class, 'register'], [Guest::class]);
 Router::post('/register', [AuthController::class, 'submitRegister']);
 
+Router::post('/logout', [AuthController::class, 'logout']);
+

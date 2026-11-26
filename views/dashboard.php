@@ -12,7 +12,13 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
       rel="stylesheet">
 
-</head><body class="bg-light"><section class="container py-4"><!-- Header and Search -->
+</head>
+<body class="bg-light">
+<form action="/logout" method="post">
+<button class="btn btn-danger btn-sm">Logout</button>
+</form>
+<section class="container py-4">
+<!-- Header and Search -->
 <div class="row mb-4 align-items-center">
 
     <div class="col-md-3 mb-2">
